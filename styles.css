@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+body{
+    background: url("./images/pattern-curve.svg") no-repeat left bottom, url("./images/pattern-bg.svg") no-repeat right 6% top 40%;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-size: 32px;
+}
+.slider{
+    margin: 9% 10%;
+    position: relative;
+}
+.item{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+.item.active{
+    display: grid;
+}
+.item.inactive{
+    display: none;
+}
+.details{
+    background: url("/images/pattern-quotes.svg") no-repeat left 25% top -4%;
+}
+.testimony{
+    font-size: 1em;
+    margin: 55px -7% 0 15px;
+    font-weight: 300;
+    color: hsl(240, 38%, 20%);
+}
+.photo{
+    z-index: -1;
+    box-shadow: 0 2px 2px hsla(240, 38%, 20%, 0.12), 
+              0 4px 4px hsla(240, 38%, 20%, 0.12), 
+              0 8px 8px hsla(240, 38%, 20%, 0.12), 
+              0 16px 16px hsla(240, 38%, 20%, 0.12), 
+              0 32px 32px hsla(240, 38%, 20%, 0.12),
+              0 64px 64px hsla(240, 38%, 20%, 0.12);
+}
+.personal-details{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.65em;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.name{
+    font-weight: 700;
+    color:hsl(240, 38%, 20%)
+}
+.designation{
+    color: hsl(240, 18%, 77%);
+    font-weight: 300;
+    font-size: 0.95em;
+}
+.slider-buttons{
+    position: absolute;
+    display: flex;
+    gap: 7px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 35px;
+    padding: 2px 5px;
+    bottom: -5%;
+    right: 33%;
+}
+.slider-buttons img{
+    margin: 15px;
+    width: 12px;
+}
+.slider-prev, .slider-next{
+    cursor: pointer;
+}
