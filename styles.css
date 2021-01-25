@@ -22,7 +22,7 @@ body{
     display: none;
 }
 .details{
-    background: url("/images/pattern-quotes.svg") no-repeat left 25% top -4%;
+    background: url("./images/pattern-quotes.svg") no-repeat left 25% top -4%;
 }
 .testimony{
     font-size: 1em;
