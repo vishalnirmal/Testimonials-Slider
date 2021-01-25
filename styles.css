@@ -6,7 +6,8 @@ body{
     font-size: 32px;
 }
 .slider{
-    margin: 9% 10%;
+    /* width: 87%; */
+    margin: 9% auto;
     position: relative;
 }
 .item{
@@ -74,4 +75,68 @@ body{
 }
 .slider-prev, .slider-next{
     cursor: pointer;
+}
+@media (max-width: 1440px){
+    .slider{
+        width: 85%;
+    }
+}
+@media (max-width: 1250px){
+    .slider{
+        width: 90%;
+    }
+}
+@media (max-width: 900px){
+    body{
+        font-size: 28px;
+        background: url("./images/pattern-curve.svg") no-repeat left bottom, url("./images/pattern-bg.svg") no-repeat right 50% top 5%;
+        background-size: 94vw;
+    }
+    .slider{
+        margin: 12% auto;
+    }
+    .item{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 70px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .details{
+        background-position: top center;
+        background-size: 20%;
+    }
+    .testimony{
+        margin: 30px 0 0 0;
+    }
+    .photo{
+        grid-area: 1 / 1 / 1 / 2;
+        width: 80%;
+        margin: auto;
+    }
+    .personal-details{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 0;
+        justify-content: center;
+        font-size: 1em;
+        margin: 15px 0 40px;
+    }
+    .name, .designation{
+        margin: 5px 0;
+    }
+    .slider-buttons{
+        bottom: 44vh;
+        right: 39vw;
+    }
+}
+@media (max-width: 425px){
+    body{
+        font-size: 20px;
+    }
+    .slider-buttons{
+        bottom: 42vh;
+        right: 31vw;
+    }
 }
